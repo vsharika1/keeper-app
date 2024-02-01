@@ -4,15 +4,16 @@
   box-sizing: border-box;
 }
 html {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 body {
-  background: #DCF2F1;
+  background: #dcf2f1;
+  background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
   padding: 0 16px;
 }
 
 header {
-  background-color: #7FC7D9;
+  background-color: #7fc7d9;
   margin: auto -16px;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
@@ -20,7 +21,7 @@ header {
 
 header h1 {
   color: #fff;
-  font-family: "McLaren", cursive;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 200;
 }
 
@@ -35,26 +36,108 @@ footer {
 footer p {
   color: #365486;
 }
+.note-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: -10px; /* Counteract the margin on notes for the first item in the container */
+  margin-right: -10px; /* Counteract the margin on notes for the last item in the container */
+}
 .note {
+  position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 300px; /* You can adjust the width as needed */
+  height: max-content;
+  width: 300px; /* Fixed width */
   border-radius: 10px; /* Rounded corners */
-  background-color: #fff; /* White background, you can change the color */
+  background-color: #fff; /* White background */
   margin: 10px;
-  margin-top: 25px;
+  margin-top: 25px; /* Space above the note */
   overflow: hidden; /* Ensures the content fits within the rounded corners */
+  min-height: 100px;
 }
 .note:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 .note h1 {
+  font-size: 1.1em;
   padding: 8px 16px;
   background-color: #f1f1f1; /* Light grey background for the header */
   color: #365486; /* Text color */
   border-bottom: 1px solid #e0e0e0; /* Optional border */
 }
 .note p {
+  font-size: 1.1em;
   padding: 16px;
   color: black; /* Text color */
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
+.note-footer {
+  position: relative;
+  height: 40px; /* Adjust based on button size */
+  margin-top: 15px; /* Adjust as needed */
+  text-align: right;
+}
+.create-note-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.note-card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 20px;
+  background-color: white;
+  width: 80%;
+  max-width: 500px; /* Adjust as needed */
+  position: relative; /* Needed for absolute positioning of the button */
+  overflow: visible; /* Ensures the button is visible outside the card */
+}
+
+.note-input, .note-textarea {
+  font-size: medium;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none; /* Removes the border */
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding doesn't affect the overall width */
+  outline: none; /* Removes the focus outline */
+}
+
+.note-textarea {
+  resize: none; /* Prevents resizing */
+  overflow: auto; /* Allows scrolling */
+}
+
+.note-submit {
+  width: 50px; /* Size of the button */
+  height: 50px; /* Size of the button */
+  background-color: #7fc7d9;
+  color: white;
+  border: none;
+  border-radius: 50%; /* Makes it a circle */
+  cursor: pointer;
+  box-sizing: border-box;
+
+  /* Positioning */
+  position: absolute;
+  right: 25px; /* Half of the width to move it outside */
+  bottom: -25px; /* Half of the height to move it outside */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  /* Centering content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px; /* Adjust as needed */
+}
+
+.note-submit:hover {
+  background-color: #365486;
+}
+
+
