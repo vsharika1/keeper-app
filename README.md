@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Keeper
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+- Purpose: Keeper is a lightweight, user-friendly web application designed for quick and efficient note-taking.
+- Design: The app features a clean and minimalistic design, with a soothing color palette. The layout is responsive, ensuring a consistent experience across various devices.
+- Technology: Developed using React, it leverages the power of JavaScript, HTML, and CSS. The use of Material-UI components adds to the aesthetic appeal and functionality.
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## User Guide
+### Starting with Keeper
+- Opening the App: Navigate to the Keeper app on your web browser. You'll be greeted with a simple interface.
+- Header: At the top, the header displays the app's name, "Keeper", accompanied by a comment icon.
+### Creating Notes
+- Initiating a Note: Click on the text area that says "Take a note..." to start creating a new note.
+- Entering Content: As you click, the note expands, allowing you to enter a title and the note content.
+- Adding the Note: Once you're done, click the circular button with a plus icon (AddIcon) to add the note to your list.
+### Viewing Notes
+- Display: All created notes are displayed under the note input area. Each note is styled with a shadow, rounded corners, and a hover effect for better visibility and interaction.
+### Deleting Notes
+- Delete Option: Each note comes with a delete button (a red button with a trash icon) at the bottom right corner.
+- Removing a Note: Click this button to delete the note.
+### Additional Features
+- Styling: The app is styled with soothing colors and a clean interface, making it easy on the eyes and simple to use.
+- Responsive Design: The app adjusts to different screen sizes, ensuring a seamless experience on both desktop and mobile devices.
+### Footer
+- Copyright Information: At the bottom of the app, there's a footer displaying the current year's copyright information.
+### Notes on Functionality
+- Data Persistence: The current implementation does not provide data persistence. Notes will be lost upon refreshing or closing the app.
+- Validation: There are no validations or error handling implemented for note creation. This can be an area for further development.
